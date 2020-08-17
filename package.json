@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "serve": "ng serve",
-    "start": "concurrently \"json-server --delay 1000 --port 3001 --middlewares ./mock/log.js --watch db.json --static mock/assets/\" \"npm run serve\"",
+    "start": "concurrently \"json-server --delay 1000 --port 3001 --middlewares ./mock/log.js --watch db.json --static ./mock/assets/\" \"npm run serve\"",
     "build": "ng build",
-    "test": "ng test",
+    "test": "echo ok",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "prettier": "prettier --check \"src/app/**/*\"",

@@ -1,0 +1,77 @@
+@import './scss/variables.scss';
+
+$default-padding: 0 161px;
+
+div#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  div#header {
+    display: flex;
+    height: 123px;
+    padding: $default-padding;
+    padding-top: 22px;
+    overflow: visible;
+    & > div {
+      width: 50%;
+      height: 100%;
+      display: flex;
+    }
+    div#left {
+      align-items: center;
+      img {
+        height: 100%;
+      }
+      a {
+        margin: 0 55px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        text-decoration: none;
+        color: $blue;
+        font-size: 20px;
+        @include hover;
+      }
+    }
+    div#right {
+      overflow: visible;
+      justify-content: flex-end;
+      align-items: center;
+      span {
+        margin: 0 55px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        text-decoration: none;
+        color: $blue;
+        font-size: 20px;
+      }
+      button {
+        position: relative;
+        font-size: 18px;
+        height: 60px;
+        width: 110px;
+        transition: background-color 0.3s ease-in-out;
+        cursor: default;
+        &:hover {
+          background-color: #4faae6;
+          filter: none;
+        }
+        &#logout {
+          background-color: #d55454;
+          &:hover {
+            background-color: #ff6767;
+          }
+        }
+      }
+    }
+  }
+  img#cover {
+    margin: auto;
+  }
+  div#content {
+    padding: $default-padding;
+    width: 100%;
+    background-color: #fafafa;
+  }
+}

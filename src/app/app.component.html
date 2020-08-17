@@ -1,1 +1,28 @@
-<router-outlet></router-outlet>
+<div id="root">
+  <app-loading></app-loading>
+  <app-warning></app-warning>
+  <div id="header">
+    <div id="left">
+      <img src="../assets/imgs/logo.png" alt="Logo" />
+      <a [routerLink]="[Routes.Lista]">Products</a>
+    </div>
+    <div id="right">
+      <button
+        *ngIf="!user; else logout"
+        (click)="openLogin($event)"
+        #loginButton
+      >
+        <app-login *ngIf="loginOpen"></app-login>
+        Login
+      </button>
+      <ng-template #logout>
+        <span>Welcome {{ user }}</span>
+        <button id="logout" (click)="logOut()">Logout</button>
+      </ng-template>
+    </div>
+  </div>
+  <img id="cover" src="../assets/imgs/cover.png" alt="Cover" />
+  <div id="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

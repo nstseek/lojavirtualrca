@@ -84,5 +84,21 @@
       "platforms": "PS4",
       "title": "God of War"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "login": "tom390@rca.com",
+      "name": "Tom",
+      "password": "RCA2020",
+      "token": "49bf3459f66d55b629aca345abfecc80"
+    }
+  ],
+  "cart": [
+    {
+      "id_user": 1,
+      "items": [],
+      "id": 1
+    }
   ]
 }

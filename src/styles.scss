@@ -1,8 +1,9 @@
+@import './app/scss/variables.scss';
+
 @font-face {
-  font-family: 'Open Sans';
-  font-weight: 900;
-  font-style: italic;
-  src: url('./assets/fonts/open-sans-extrabold-italic.ttf') format('truetype');
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  src: url('./assets/fonts/helvetica-neue.ttf') format('truetype');
 }
 
 @font-face {
@@ -18,4 +19,18 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  background-color: $blue;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: white;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+  @include hover;
+  &:focus {
+    outline: none;
+  }
 }
