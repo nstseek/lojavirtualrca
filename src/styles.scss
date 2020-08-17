@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 900;
+  font-style: italic;
+  src: url('./assets/fonts/open-sans-extrabold-italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  src: url('./assets/fonts/helvetica-neue-bold.ttf') format('truetype');
+}
+
+html,
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
