@@ -1,0 +1,88 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "pic_id": 1,
+      "price": 199,
+      "platforms": "PS4",
+      "title": "TLOU 2"
+    },
+    {
+      "id": 2,
+      "pic_id": 2,
+      "price": 200,
+      "platforms": "PS4, PC, XBOX",
+      "title": "Cyberpunk"
+    },
+    {
+      "id": 3,
+      "pic_id": 3,
+      "price": 127,
+      "platforms": "PS4",
+      "title": "Days Gone"
+    },
+    {
+      "id": 4,
+      "pic_id": 4,
+      "price": 60,
+      "platforms": "PS4",
+      "title": "God of War"
+    },
+    {
+      "id": 5,
+      "pic_id": 1,
+      "price": 199,
+      "platforms": "PS4",
+      "title": "TLOU 2"
+    },
+    {
+      "id": 6,
+      "pic_id": 2,
+      "price": 200,
+      "platforms": "PS4, PC, XBOX",
+      "title": "Cyberpunk"
+    },
+    {
+      "id": 7,
+      "pic_id": 3,
+      "price": 127,
+      "platforms": "PS4",
+      "title": "Days Gone"
+    },
+    {
+      "id": 8,
+      "pic_id": 4,
+      "price": 60,
+      "platforms": "PS4",
+      "title": "God of War"
+    },
+    {
+      "id": 9,
+      "pic_id": 1,
+      "price": 199,
+      "platforms": "PS4",
+      "title": "TLOU 2"
+    },
+    {
+      "id": 10,
+      "pic_id": 2,
+      "price": 200,
+      "platforms": "PS4, PC, XBOX",
+      "title": "Cyberpunk"
+    },
+    {
+      "id": 11,
+      "pic_id": 3,
+      "price": 127,
+      "platforms": "PS4",
+      "title": "Days Gone"
+    },
+    {
+      "id": 12,
+      "pic_id": 4,
+      "price": 60,
+      "platforms": "PS4",
+      "title": "God of War"
+    }
+  ]
+}
