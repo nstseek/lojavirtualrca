@@ -1,2 +1,16 @@
-<p>lista works!</p>
-<button (click)="redirect()">redirect</button>
+<div id="lista">
+  <div id="lista-header">
+    <h3>Products</h3>
+    <div class="cart" (click)="navigate()">
+      <img src="../../../assets/imgs/carrinho.png" alt="Cart" />
+      {{ cartQuantity ? cartQuantity : 0 }}
+    </div>
+  </div>
+  <div id="lista-items">
+    <app-game
+      *ngFor="let product of products"
+      [game]="product"
+      (addGame)="addGame($event)"
+    ></app-game>
+  </div>
+</div>

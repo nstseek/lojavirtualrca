@@ -1,1 +1,16 @@
-<p>carrinho works!</p>
+<div id="lista">
+  <div id="lista-header">
+    <h3>Cart</h3>
+  </div>
+  <div id="lista-items">
+    <app-cart-item
+      *ngFor="let item of cartItems"
+      [game]="item"
+      (changeQuantity)="changeQuantity(item)"
+    ></app-cart-item>
+  </div>
+  <div id="total">
+    <div>Total</div>
+    <div>${{ total }}</div>
+  </div>
+</div>
