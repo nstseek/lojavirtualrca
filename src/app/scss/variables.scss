@@ -1,0 +1,9 @@
+$blue: #3877a1;
+$border-config: 1px solid #d8c4c4;
+
+@mixin hover {
+  transition: filter 0.3s ease-in-out;
+  &:hover {
+    filter: brightness(1.3);
+  }
+}
