@@ -1,0 +1,56 @@
+@import '../../scss/variables.scss';
+
+div.container {
+  position: absolute;
+  left: -70px;
+  top: 75px;
+  overflow: visible;
+  width: 240px;
+  height: max-content;
+  z-index: 100;
+  border: $border-config;
+  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: white;
+  div.arrow::after {
+    transform: rotate(135deg);
+    content: '';
+    background-color: white;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    border: $border-config;
+    top: -11px;
+    left: 110px;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+  }
+  input {
+    border: $border-config;
+    padding: 13px;
+    color: $blue;
+    width: 190px;
+    height: 40px;
+    border-radius: 6px;
+    &::placeholder {
+      color: $blue;
+    }
+    &:not(:first-child) {
+      margin-top: 5px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  button {
+    margin-top: 5px;
+    height: 40px;
+    width: 190px;
+    font-family: 'Open Sans';
+    font-weight: light;
+    font-size: 13px;
+  }
+}

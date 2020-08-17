@@ -1,0 +1,13 @@
+<div class="cart-item">
+  <img src="{{ Cover }}" alt="Cover" />
+  <div class="text">
+    <h3>{{ game.title }}</h3>
+    <h6>{{ game.platforms }}</h6>
+  </div>
+  <div class="quantity">
+    <button (click)="emit(false)">-</button>
+    <span>{{ game.quantity }}</span>
+    <button (click)="emit(true)">+</button>
+  </div>
+  <div class="price">$ {{ game.price }}</div>
+</div>

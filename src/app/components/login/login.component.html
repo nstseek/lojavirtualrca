@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="arrow"></div>
+  <input
+    type="text"
+    placeholder="E-mail"
+    [formControl]="login"
+    (keyup)="logIn($event)"
+  />
+  <input
+    type="password"
+    placeholder="Password"
+    [formControl]="password"
+    (keyup)="logIn($event)"
+  />
+  <button (click)="logIn()">Login</button>
+</div>

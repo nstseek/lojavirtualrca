@@ -1,0 +1,7 @@
+<div class="game">
+  <div class="price">${{ game.price }}</div>
+  <h3>{{ game.title }}</h3>
+  <h5>{{ game.platforms }}</h5>
+  <img src="{{ Cover }}" alt="Cover" />
+  <button (click)="emit()">Add to cart</button>
+</div>
